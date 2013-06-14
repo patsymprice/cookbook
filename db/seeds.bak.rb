@@ -22,10 +22,10 @@ while  i < name_arr.length
 end
 
 
-@client = Twilio::REST::Client.new('ACc2b6db18318806473b6caf6bcc3ee456','cbeac64dd42f5d84cff7d07c3eefaaab')
+@client = Twilio::REST::Client.new('secret_sauce','more_secret_sauce')
 binding.pry
 @client.account.sms.messages.create(
-  :from => '+14085122239',
-  :to => '+14082187521',
+  :from => 'one_number,
+  :to => 'another_number',
   :body => "#{name_arr.count.to_s} has been updated from Bon Apetit"
 )
