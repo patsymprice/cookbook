@@ -1,0 +1,13 @@
+<h1>Recipes#new</h1>
+<p>Find me in app/views/recipes/new.html.erb</p>
+
+<%= form_for @recipe, :url =>{:action => "create"} do |f| %>
+    <label>Title</label><br>
+    <%= f.text_field :title %>
+    <br>
+
+    <label>Instructions</label><br>
+    <%= f.text_area :content %>
+    <br>
+    <% f.submit %>
+  <% end %>
